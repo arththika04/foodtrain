@@ -12,7 +12,7 @@ body {
   text-transform: uppercase;
 
   text-shadow:
-    0 0 5px #ff9a00,
+    0 0 5px #141414,
     0 0 10px #ff6a00,
     0 0 20px #ff3c00,
     0 0 40px #ff0000,
@@ -71,10 +71,10 @@ body {
   /* FLUID GRADIENT */
   background: linear-gradient(
     135deg,
-    #ec7622,
-    #690507,
-    #850735,
-    #680ab9
+    #d83c0d,
+    #0f0f0f,
+    #0b6fc0,
+    #0d0d0e
   );
 
   background-size: 400% 400%;
@@ -96,19 +96,90 @@ button {
   margin-top: 20px;
 }
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background same as landing page */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff7a18, #ff5722, #b84315);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔥 FIRE TEXT */
+.fire-text {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow:
+    0 0 5px #ffcc00,
+    0 0 15px #ff9900,
+    0 0 30px #ff6600,
+    0 0 60px #ff3300;
+  animation: fire 1.5s infinite alternate;
+}
+
+@keyframes fire {
+  0% {
+    text-shadow:
+      0 0 5px #ffcc00,
+      0 0 15px #ff9900,
+      0 0 30px #ff6600;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #ffd000,
+      0 0 25px #ff8800,
+      0 0 50px #ff4400;
+  }
+}
+
+/* Login Card */
 .login-box {
-  width: 300px;
-  margin: 120px auto;
   background: white;
-  padding: 25px;
-  border-radius: 10px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
 }
 
 .login-box input {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-box button:hover {
+  background: #e64a19;
+}
+
 .landing h1,
 .landing p {
   color: white;
