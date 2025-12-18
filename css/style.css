@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  font-family: 'Times New Roman', Times, serif;
+  background: #188051;
 }
 
 .landing {
@@ -12,16 +12,45 @@ body {
   align-items: center;
   text-align: center;
 }
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* FLUID GRADIENT */
+  background: linear-gradient(
+    135deg,
+    #ec7622,
+    #690507,
+    #850735,
+    #680ab9
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
 
 .logo {
-  width: 120px;
+  width: 320px;
 }
 
 button {
   padding: 12px 25px;
-  background: #ff5722;
+ background: white;
+  color: #ff4e50;
+  font-weight: bold;
   border: none;
-  color: white;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
@@ -40,3 +69,9 @@ button {
   padding: 10px;
   margin: 10px 0;
 }
+.landing h1,
+.landing p {
+  color: white;
+}
+
+ 
