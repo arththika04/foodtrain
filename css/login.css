@@ -137,4 +137,23 @@ body {
   font-weight: 600;
   letter-spacing: 0.08em;
   align-self: flex-start;
+  }
+
+/* responsive */
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }.hero {
+    min-height: 260px;
+    padding: 3rem 2rem;
+  }
+
+  .login-side {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .login-card {
+    margin-top: -60px;
+  }
+}
 
