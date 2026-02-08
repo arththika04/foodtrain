@@ -28,3 +28,17 @@ body {
   align-items: center;
   padding: 4rem 5rem;
 }
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  background: linear-gradient(
+    120deg,
+    rgba(248, 250, 252, 0.16),
+    transparent 60%
+  );
+  mix-blend-mode: screen;
+  filter: blur(12px);
+  pointer-events: none;
+}
