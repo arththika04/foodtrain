@@ -74,3 +74,18 @@ body {
   border-radius: 22px;
   box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
 }
+.login-card h2 {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.8rem;
+}
+
+/* form fields */
+.field {
+  display: flex;
+  align-items: center;
+  background: #f5f5ff;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 1rem;
+}
